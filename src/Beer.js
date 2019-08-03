@@ -68,7 +68,8 @@ class Beer extends React.Component {
               <StyledPEl>{this.state.tagLine}</StyledPEl>
               <StyledPEl>{this.state.description}</StyledPEl>
             </StyledContentWr>
-          </StyledEl>}
+          </StyledEl>
+        }
       </StyledWr>
     )
   }

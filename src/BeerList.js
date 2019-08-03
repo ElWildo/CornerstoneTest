@@ -56,6 +56,7 @@ class BeersList extends React.Component {
 
     renderBeers = () => {
         var sortedArray = this.state.beers;
+        //switch for sorting function
         switch (this.state.sorting) {
             case "ABVAsc":
                 sortedArray.sort(this.sortingABVAsc)
@@ -115,7 +116,8 @@ class BeersList extends React.Component {
                             <LoaderCenter />
                         </Loader>
                     </LoaderWrapper>
-                    : null}
+                    : null
+                }
                 <StyledUl>
                     {this.renderBeers()}
                 </StyledUl>
